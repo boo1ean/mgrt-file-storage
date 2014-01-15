@@ -1,16 +1,5 @@
-var fs = require('fs');
-
-var Storage = function(path) {
-	this.path = path;
-}
-
-Storage.prototype.get = function(cb) {
-	cb(JSON.parse(fs.readFileSync(this.path)));
-}
-
-Storage.prototype.set = function(data, cb) {
-	cb(fs.writeFileSync(this.path, JSON.stringify(data)));
-}
+var fs = require('fs'),
+    Storage = require('./lib/storage');
 
 module.exports = function() {
 	var file = '.migrations',
