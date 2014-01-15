@@ -1,5 +1,4 @@
 var createWard = require('../lib/ward'),
-    should = require('should'),
     fs = require('fs'),
     exists = fs.existsSync,
     read = fs.readFileSync,
@@ -15,6 +14,7 @@ describe('File storage ward', function() {
 	it('Should create file at given path with empty json array if it does not exist and call next', function(done) {
 		var path = __dirname + '/assets/test';
 
+		exists(path).should.not.be.ok;
 		createWard(path)(function() {
 			exists(path).should.be.ok;
 			JSON.parse(read(path)).should.be.instanceof(Array).and.have.lengthOf(0);

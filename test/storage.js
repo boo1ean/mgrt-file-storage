@@ -1,5 +1,4 @@
 var Storage = require('../lib/storage'),
-    should = require('should'),
     fs = require('fs'),
     read = fs.readFileSync,
     unlink = fs.unlinkSync;
