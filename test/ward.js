@@ -11,7 +11,7 @@ describe('File storage ward', function() {
 		createWard('test').should.be.type('function');
 	});
 
-	it('Should create file at given path with empty json array if it does not exist and call next', function(done) {
+	it('Should create file at given path with empty json array if file does not exist and call next', function(done) {
 		var path = __dirname + '/assets/test';
 
 		exists(path).should.not.be.ok;

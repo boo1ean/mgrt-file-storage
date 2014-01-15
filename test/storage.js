@@ -15,7 +15,7 @@ describe('File system storage', function() {
 		});
 	});
 
-	it('Should write given string to the file specified file', function(done) {
+	it('Should write given string to the specified file', function(done) {
 		var content = 'very content',
 		    path = __dirname + '/assets/test';
 
