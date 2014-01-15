@@ -1,0 +1,19 @@
+{
+  "name": "mgrt-file-storage",
+  "version": "0.0.0",
+  "description": "File storage plugin for mgrt",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "mgrt",
+    "mgrt-plugin"
+  ],
+  "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "should": "~2.1.1",
+    "mocha": "~1.17.0"
+  }
+}
