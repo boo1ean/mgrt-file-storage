@@ -1,5 +1,7 @@
 ## File storage plugin for [mgrt](https://github.com/boo1ean/mgrt) [![Build Status](https://travis-ci.org/boo1ean/mgrt-file-storage.png?branch=master)](https://travis-ci.org/boo1ean/mgrt-file-storage)
 
+# License
+
 The MIT License (MIT)
 Copyright (c) 2014 Egor Gumenyuk <boo1ean0807@gmail.com>
 
